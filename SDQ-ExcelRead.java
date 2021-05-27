@@ -14,9 +14,9 @@ public class ExcelReadTest
 	public static void main(String[] args) throws Exception {
 		File folder = new File("C:\\Users\\kimsm\\Desktop\\test");
 		//결과보고서 양식 고정
-		int rowNo = 7;
-		int DBIndex = 2;
-		int versionIndex = 5;
+		int rowNo = 7; //7행
+		int DBIndex = 2;//2열
+		int versionIndex = 5;//5열
 
 		for (File file : folder.listFiles()) {
 			FileInputStream xlsxFile = new FileInputStream(file);
