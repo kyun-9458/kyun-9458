@@ -28,8 +28,8 @@ import org.jsoup.select.Elements;
 public class Html_Parsing {
     public static void main(String[] args) {
         //String URL = "http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=13";
-
-        String URL = "https://gooddata.go.kr/qtyeval/USR/V_EVL_002.do?DBSEQNO=21282&EMLSEQ=343&AGENCYCD=3510500";
+         String URL = "https://heodolf.tistory.com/18";
+        //String URL = "https://gooddata.go.kr/qtyeval/USR/V_EVL_002.do?DBSEQNO=21282&EMLSEQ=343&AGENCYCD=3510500";
         try{
             Connection conn = Jsoup.connect(URL);
 
@@ -37,8 +37,15 @@ public class Html_Parsing {
             Document html = conn.get();
 //요소탐색
             //Attribute 탐색
+
             System.out.println("[Attribute 탐색]");
+
             Elements fileblocks = html.getElementsByClass("fileblock");
+
+            //Elements fileblocks = html.getElementsBy
+           //Elements fileblocks = html.getElementsByAttribute("tab-pane active");
+            //Elements fileblocks = html.getElementsByClass("btn btn-xs bg-white");
+
             for( Element fileblock : fileblocks) {
                 Elements files = fileblock.getElementsByTag("a");
                 for( Element elm : files) {

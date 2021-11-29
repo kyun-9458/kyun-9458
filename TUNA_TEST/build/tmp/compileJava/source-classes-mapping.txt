@@ -7,3 +7,5 @@ Crawler/utils/Crawler.java
  Crawler.utils.Crawler$1
 Crawler/utils/Html_Parsing.java
  Crawler.utils.Html_Parsing
+Crawler/utils/Html_Parsing1.java
+ Crawler.utils.Html_Parsing1
